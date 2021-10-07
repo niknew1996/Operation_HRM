@@ -7,7 +7,7 @@ RUN apt-get install -y tdsodbc unixodbc-dev
 RUN apt install unixodbc-bin -y
 RUN apt-get clean -y
 RUN rm -rf /etc/localtime
-RUN ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
+RUN ln -s /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 
 COPY . /app
 
